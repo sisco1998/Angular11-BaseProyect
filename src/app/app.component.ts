@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {  } from "module";
+import { DemoService } from './services/demo.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'DemoR';
+  M:any[] = [];
+
+  constructor(private demo:DemoService) {
+    this.soloActivos();
+  }
+
+  soloActivos(){
+    this.demo.consumirModulos().subscribe((mod:any)=>{
+      this.M = mod.data;
+    });
+  }
 }

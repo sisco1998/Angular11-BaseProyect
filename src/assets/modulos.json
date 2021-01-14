@@ -1,0 +1,25 @@
+{
+    "status": true,
+    "data": [
+      {
+        "moduleName": "Bolsa de Empleo",
+        "active": true
+      },
+      {
+        "moduleName": "Capacitaciones",
+        "active": true
+      },
+      {
+        "moduleName": "Módulo X",
+        "active": false
+      },
+      {
+        "moduleName": "Módulo Y",
+        "active": false
+      },
+      {
+        "moduleName": "Módulo Z",
+        "active": false
+      }
+    ]
+}
